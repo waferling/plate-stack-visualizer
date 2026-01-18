@@ -17,7 +17,7 @@ A visualizer based on the "stack" data structure, in the form of plates.
 * Clean MVC separation (Stack class → render → events)
   
 ## :pushpin: The Process
-I started with creating the containers and positioning them, then found a nice image of a plate. After experimenting, I achieved realistic stacking visuals and crafted the buttons.
+I started with the containers and positioning, then sourced a clean plate image. After experimenting, I achieved realistic plate stacking visuals and crafted the buttons.
 
 Next came the core logic: a complete Stack class with push/pop/isEmpty/size/clear methods. I connected each button to dynamically render plate objects (div+img) matching the stack state.
 
