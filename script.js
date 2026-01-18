@@ -4,14 +4,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
         constructor() {
             this.items = [];
+            this.load();
+        }
+
+        save() {
+            localStorage.setItem('plateStack', JSON.stringify(this.items));
+        }
+
+        load() {
+            const saved = localStorage.getItem('plateStack');
+            if (saved) {
+                this.items = JSON.parse(saved);
+            }
+        }
+
+        isEmpty() {
+            return this.items.length === 0;
         }
 
         push(value) {
             this.items.push(value);
+            this.save();
         }
 
         pop() {
-            return this.items.pop() ?? null;
+            // return this.items.pop() ?? null;
+            // this.save();
+            if (this.isEmpty()) {
+                throw new Error('Stack underflow!');
+            }
+            const value = this.items.pop();
+            this.save();
+            return value; 
         }
 
         size() {
@@ -20,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         clear() {
             this.items = [];
+            this.save();
         }
     }
 
@@ -56,6 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
             message.innerHTML = '';
         }
     }
+
+    renderStack(); // Initial render on page load from localStorage
 
     pushBtn.addEventListener('click', () => {
         

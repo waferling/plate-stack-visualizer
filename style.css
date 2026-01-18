@@ -134,21 +134,3 @@ h2 {
     display: block;
     user-select: none;
 }
-
-.animated-image {
-  opacity: 0;
-  transform: translateY(50px); /* Start 50px below its final position */
-  animation: fadeInSlideUp 1s ease-out forwards; /* Apply the animation */
-}
-
-/* 2. Define the animation using @keyframes */
-@keyframes fadeInSlideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1; /* Final state: fully visible */
-    transform: translateY(0); /* Final state: original position */
-  }
-}
