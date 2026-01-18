@@ -52,14 +52,14 @@ h2 {
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.19);
 }
 
-.btn-variant {
+.btn-red {
     background: #a22209;
     color: #fff;
 }
 
 .btn:hover {
-    background: #3a3f46;
-    color: #fff;
+    background: #31353b;
+    color: #dad6d6;
     transform: scale(1.01);
     transition: transform 0.15s ease-in-out;
 }
@@ -92,6 +92,23 @@ h2 {
     border-bottom-right-radius: 10px;
 }
 
+#message {
+    font-size: 20px;
+    color: #0e0e0e;
+    font-weight: 500;
+    user-select: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #72c9e7;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#message:empty {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
 .stack{
     position: absolute;
     border: 2px solid transparent;
@@ -118,3 +135,20 @@ h2 {
     user-select: none;
 }
 
+.animated-image {
+  opacity: 0;
+  transform: translateY(50px); /* Start 50px below its final position */
+  animation: fadeInSlideUp 1s ease-out forwards; /* Apply the animation */
+}
+
+/* 2. Define the animation using @keyframes */
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1; /* Final state: fully visible */
+    transform: translateY(0); /* Final state: original position */
+  }
+}

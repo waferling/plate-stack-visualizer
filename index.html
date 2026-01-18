@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plate Stack Visualizer</title>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/?size=100&id=73FgXcRF4HNx&format=png&color=000000">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -12,26 +13,27 @@
         <h2>PLATE STACK VISUALIZER</h2>
 
         <div class="button-container">
-            <button id="addPlateBtn" class="btn">PUSH</button>
-            <button id="removePlateBtn" class="btn btn-variant">POP</button>
+            <button id="pushBtn" class="btn">PUSH</button>
+            <button id="popBtn" class="btn btn-red">POP</button>
             <button id="sizeBtn" class="btn">SIZE</button>
-            <button id="clearBtn" class="btn btn-variant">CLEAR</button>
+            <button id="clearBtn" class="btn btn-red">CLEAR</button>
         </div>
 
         <div class="container">
-            <div class="stack">
-                <div class="plate-object">
+            <div class="stack" id="stack">
+
+                <!-- Sample of how a plate object looks like when rendered:
+                <div class="plate-object"> // Plate 1
                     <img src="./dish.png" alt="White plate facing up">
                 </div>
-                <div class="plate-object">
+                <div class="plate-object"> // Plate 2
                     <img src="./dish.png" alt="White plate facing up">
-                </div>
-                <div class="plate-object">
-                    <img src="./dish.png" alt="White plate facing up">
-                </div>
+                </div> -->
             </div>
             <div class="ground"></div>
         </div>
+        <span id="message"></span>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
