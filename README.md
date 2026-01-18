@@ -1,5 +1,5 @@
 ## :fork_and_knife: Plate Stack Visualizer
-An interactive visualizer based on the "stack" data structure, in the form of plates.
+An interactive visualizer based on the "stack" data structure, in the form of plates. Try it [here]. (https://waferling.github.io/plate-stack-visualizer/)
 
 ## :sparkles: Technologies
 * HTML
