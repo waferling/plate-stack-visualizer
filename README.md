@@ -27,3 +27,7 @@ To make it production-ready, I put a limit on the number of plates so they would
 Finally, I implemented localStorage persistence, so the stack state survives page reloads and browser restarts. This project was a rewarding dive into DSA + real-world JS engineering.
 
 ## :open_file_folder: Preview
+
+https://github.com/user-attachments/assets/220ffce3-963c-42f6-a308-1789503faef4
+
+
