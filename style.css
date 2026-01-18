@@ -8,9 +8,9 @@
 h2 {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 20px;
     color:#3a3f46;
-    margin-bottom: 15px;
+    margin-bottom: -10px;
     user-select: none;
 }
 
@@ -34,6 +34,8 @@ h2 {
     align-items: center;
     justify-content: center;
     position: relative;
+    transform: scale(0.8);
+    margin-bottom: -50px;
 }
 
 .btn {
@@ -79,6 +81,7 @@ h2 {
     align-items: center;
     justify-content: center;
     position: relative;
+    transform: scale(0.8);
 }
 
 .ground {
@@ -93,7 +96,7 @@ h2 {
 }
 
 #message {
-    font-size: 20px;
+    font-size: 16px;
     color: #0e0e0e;
     font-weight: 500;
     user-select: none;
@@ -101,6 +104,8 @@ h2 {
     background-color: #72c9e7;
     border-radius: 10px;
     padding: 10px;
+    margin-top: -45px;
+    margin-bottom: 10px;
 }
 
 #message:empty {
