@@ -1,5 +1,5 @@
 ## :fork_and_knife: Plate Stack Visualizer
-A visualizer based on the "stack" data structure, in the form of plates.
+An interactive visualizer based on the "stack" data structure, in the form of plates.
 
 ## :sparkles: Technologies
 * HTML
@@ -15,6 +15,7 @@ A visualizer based on the "stack" data structure, in the form of plates.
 * Dynamic status messaging for all operations
 * localStorage persistence across browser sessions/reloads
 * Clean MVC separation (Stack class → render → events)
+* Responsive design
   
 ## :pushpin: The Process
 I started with the containers and positioning, then sourced a clean plate image. After experimenting, I achieved realistic plate stacking visuals and crafted the buttons.
